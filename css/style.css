@@ -48,6 +48,54 @@ main {
     padding: 20px;
 }
 
+/* Intro section styling */
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.intro-image {
+    max-width: 45%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.intro-text {
+    max-width: 50%;
+    text-align: left;
+}
+
+.intro-text h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.intro-text p {
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: white;
+    background-color: slateblue;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: darkslateblue;
+}
+
 /* Footer styling */
 footer {
     color: white;
@@ -95,3 +143,6 @@ footer a:hover {
     
     footer {
         padding: 10px 15
+    }
+
+
