@@ -2,29 +2,32 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* Navigation bar styling */
 nav {
     display: flex;
     align-items: center;
-    height: 55px;
+    height: 60px;
     background-color: slateblue;
+    padding: 0 20px;
 }
 
 /* Logo or icon styling */
 .icon {
     color: white;
-    margin: 0 10px;
-    font-size: 1.2em;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 /* Link styling within the navigation bar */
 nav a {
     text-decoration: none;
     color: white;
-    margin: 0 10px;
-    margin-left: 50px;
+    margin-left: 20px;
+    font-size: 1em;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 /* Hover effect for navigation links */
@@ -41,7 +44,8 @@ nav a:hover {
 
 /* Main content area */
 main {
-    height: 660px;
+    min-height: 660px;
+    padding: 20px;
 }
 
 /* Footer styling */
@@ -49,16 +53,45 @@ footer {
     color: white;
     background-color: slateblue;
     text-align: center;
-    padding: 10px 0;
+    padding: 15px 20px;
+    font-size: 0.9em;
 }
 
 /* Footer link styling */
 footer a {
     text-decoration: none;
     color: white;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 /* Hover effect for footer links */
 footer a:hover {
     text-decoration: underline;
 }
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 20px;
+    }
+    
+    nav a {
+        margin: 10px 0;
+        margin-left: 0;
+        font-size: 1.1em;
+    }
+    
+    .reg {
+        margin-left: 0;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    main {
+        padding: 15px;
+    }
+    
+    footer {
+        padding: 10px 15
