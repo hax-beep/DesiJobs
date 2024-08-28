@@ -1,18 +1,34 @@
+/* Reset default margins and padding */
 * {
     margin: 0;
     padding: 0;
-  }
-  nav {
+    box-sizing: border-box;
+}
+
+/* Body background color */
+body {
+    background-color: rgb(178, 166, 255);
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation bar styling */
+nav {
     display: flex;
-    height: 55px;
+    align-items: center;
+    height: 60px;
     background-color: slateblue;
-  }
-  .icon {
+    padding: 0 20px;
+}
+
+/* Logo or icon styling */
+.icon {
     color: white;
-    margin: 10px;
-    margin-top: 15px;
-  }
-  nav a {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Link styling within the navigation bar */
+nav a {
     text-decoration: none;
     color: white;
     margin: 10px;
@@ -34,38 +50,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-    .container{
-        background-color: slateblue;
-        height: 500px;
-        width: 450px;
-        border-radius: 5%;
-        border: 2px solid rgb(34, 0, 255);
-        box-shadow: 5px 5px 0 0;
-        text-align: center;
-    }
-    form{
-        margin: 15px;
-    }
-    h1{
-        margin-bottom: 20px;
-    }
-    p{
-        text-decoration: dotted;
-        margin-top: 5px;
-    }
-    input{
-        margin-bottom: 25px;
-        border-radius: 5px;
-        padding: 5px;
-        box-shadow: 0 5px;
-    }
-    .button1{
-        margin: 50px;
-        padding: 5px;
-        background-color: slateblue;
-        color: white;
-        box-shadow: none;
+
     }
     footer{
         color: white;
