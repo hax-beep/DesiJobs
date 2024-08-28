@@ -44,7 +44,7 @@ nav a:hover {
 
 /* Main content area */
 main {
-    min-height: 660px;
+    min-height: 624px;
     padding: 20px;
 }
 
@@ -95,6 +95,7 @@ main {
 .cta-button:hover {
     background-color: darkslateblue;
 }
+
 
 /* Footer styling */
 footer {
