@@ -31,6 +31,7 @@ nav {
 nav a {
     text-decoration: none;
     color: white;
+<<<<<<< HEAD
     margin: 10px;
     margin-top: 17px;
     margin-left: 50px;
@@ -50,20 +51,100 @@ nav a {
         display: flex;
         align-items: center;
         justify-content: center;
-
     }
-    footer{
-        color: white;
+    .container{
         background-color: slateblue;
+        height: 500px;
+        width: 450px;
+        border-radius: 5%;
+        border: 2px solid rgb(34, 0, 255);
+        box-shadow: 5px 5px 0 0;
         text-align: center;
-    
     }
-    footer a{
-        text-decoration: none;
+    form{
+        margin: 15px;
+    }
+    h1{
+        margin-bottom: 20px;
+    }
+    p{
+        text-decoration: dotted;
+        margin-top: 5px;
+    }
+    input{
+        margin-bottom: 25px;
+        border-radius: 5px;
+        padding: 5px;
+        box-shadow: 0 5px;
+    }
+    .button1{
+        margin: 50px;
+        padding: 5px;
+        background-color: slateblue;
         color: white;
+        box-shadow: none;
+=======
+    margin-left: 20px;
+    font-size: 1em;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+/* Hover effect for navigation links */
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content area styling */
+main {
+    min-height: calc(100vh - 120px); /* Adjust for header and footer height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Footer styling */
+footer {
+    color: white;
+    background-color: slateblue;
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 0.9em;
+}
+
+/* Footer link styling */
+footer a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+/* Hover effect for footer links */
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 20px;
+>>>>>>> ffb9b440ff074e5d85d355606f59ec5dc9ab1e2d
     }
-    footer a:hover{
-        text-decoration: underline;
-        color: white;
-    
+
+    nav a {
+        margin: 10px 0;
+        margin-left: 0;
+        font-size: 1.1em;
     }
+
+    main {
+        padding: 15px;
+    }
+
+    footer {
+        padding: 10px 15px;
+        font-size: 0.85em;
+    }
+}
