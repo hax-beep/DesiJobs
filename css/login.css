@@ -25,39 +25,38 @@ nav {
     color: white;
     font-size: 1.5em;
     font-weight: bold;
+    margin: 50px;
 }
 
 /* Link styling within the navigation bar */
-nav a {
+nav a{
     text-decoration: none;
     color: white;
-<<<<<<< HEAD
-    margin: 10px;
-    margin-top: 17px;
-    margin-left: 50px;
-  }
+    margin: 15px;   
+}
   nav a:hover{
       text-decoration: underline;
       color: white;
-      margin: 10px;
-      margin-top: 17px;
-      margin-left: 50px;
+      margin: 15px;
     }
     body{
-        background-color: rgb(178, 166, 255);
+        background-image: url(https://static.vecteezy.com/system/resources/previews/017/067/267/original/purple-gradient-background-art-free-vector.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
     main{
-        height: 657px;
+        height: 645px;
         display: flex;
         align-items: center;
         justify-content: center;
     }
     .container{
-        background-color: slateblue;
-        height: 500px;
+        backdrop-filter: blur(100px);
+        height: 450px;
         width: 450px;
         border-radius: 5%;
-        border: 2px solid rgb(34, 0, 255);
+        border: 2px solid white;
         box-shadow: 5px 5px 0 0;
         text-align: center;
     }
@@ -66,10 +65,13 @@ nav a {
     }
     h1{
         margin-bottom: 20px;
+        font-weight: 1000;
+        color: rgb(21, 21, 21);
     }
     p{
         text-decoration: dotted;
         margin-top: 5px;
+        font-weight: 250;
     }
     input{
         margin-bottom: 25px;
@@ -78,59 +80,28 @@ nav a {
         box-shadow: 0 5px;
     }
     .button1{
-        margin: 50px;
+        margin: 5px;
+        margin-top: 25px;
         padding: 5px;
-        background-color: slateblue;
-        color: white;
+        backdrop-filter: blur(25px);
+        background-color: aliceblue;
+        color: rgb(0, 0, 0);
         box-shadow: none;
-=======
-    margin-left: 20px;
-    font-size: 1em;
-    transition: color 0.3s ease, text-decoration 0.3s ease;
-}
-
-/* Hover effect for navigation links */
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* Main content area styling */
-main {
-    min-height: calc(100vh - 120px); /* Adjust for header and footer height */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-}
-
-/* Footer styling */
-footer {
-    color: white;
-    background-color: slateblue;
-    text-align: center;
-    padding: 15px 20px;
-    font-size: 0.9em;
-}
-
-/* Footer link styling */
-footer a {
-    text-decoration: none;
-    color: white;
-    transition: color 0.3s ease, text-decoration 0.3s ease;
-}
-
-/* Hover effect for footer links */
-footer a:hover {
-    text-decoration: underline;
-}
-
-/* Responsive design adjustments */
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        height: auto;
-        padding: 10px 20px;
->>>>>>> ffb9b440ff074e5d85d355606f59ec5dc9ab1e2d
+        height: 50px;
+        width: 250px;
+        cursor: pointer;
+    }
+    .button1:hover{
+        margin: 5px;
+        margin-top: 25px;
+        padding: 5px;
+        backdrop-filter: blur(25px);
+        background-color: slateblue;
+        color: black;
+        box-shadow: none;
+        height: 50px;
+        width: 250px;
+        cursor: pointer;
     }
 
     nav a {
@@ -146,5 +117,16 @@ footer a:hover {
     footer {
         padding: 10px 15px;
         font-size: 0.85em;
+        background-color: slateblue;
+        text-align: center;
+        color: white;
     }
-}
+    footer a{
+        text-decoration: none;
+        color: white;
+    }
+    footer a:hover{
+        text-decoration: underline;
+        color: white;
+
+    }
