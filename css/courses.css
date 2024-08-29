@@ -74,6 +74,8 @@ nav input[type="text"] {
 /* Main Styling */
 main {
     padding: 20px;
+    height: 630px;
+
 }
 
 .holder {
