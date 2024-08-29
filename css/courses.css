@@ -19,11 +19,12 @@ nav {
     font-size: 1.5em;
     font-weight: bold;
 }
-img{
+
+img {
     height: 50px;
     width: 50px;
-
 }
+
 /* Link styling within the navigation bar */
 nav a {
     text-decoration: none;
@@ -37,6 +38,7 @@ nav a {
 nav a:hover {
     text-decoration: underline;
 }
+
 /* Search form styling */
 .search-form {
     margin-left: auto;
@@ -45,68 +47,87 @@ nav a:hover {
 }
 
 nav input[type="text"] {
-    padding: 7px;
+    padding: 8px;
     border-radius: 5px;
     border: 1px solid #ccc;
     font-size: 1em;
+    width: 250px;
 }
-.search{
-    border-radius: 100%;
+
+.search {
+    border-radius: 50%;
     height: 40px;
     width: 40px;
-}
-i{
-    margin-top: 8px;
-}
-/* Main Styling */
-main{
-    height: 630px;
-}
-.holder{
+    background-color: #f0f0f0;
+    border: none;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
 }
-.container{
-    height: 300px;
-    width: 400px;
+
+.search i {
+    font-size: 1em;
+    color: #333;
+}
+
+/* Main Styling */
+main {
+    padding: 20px;
+}
+
+.holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container {
+    height: auto;
+    width: 300px;
     background-color: #50aaff;
-    margin: 4em;
-    border-radius: 5px;
+    margin: 20px;
+    border-radius: 10px;
     border: 1px solid rgb(0, 241, 189);
-    box-shadow: 5px 0 5px 0;
-    padding: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
 }
-.container h3{
+
+.container h3 {
     text-align: center;
     text-decoration: underline;
     color: #5f0d78;
+    margin-bottom: 15px;
 }
-.container p{
-    margin: 5px;
+
+.container p {
     color: #312415;
+    line-height: 1.5;
 }
-.container button{
-    height: 50px;
-    width: 150px;
-    margin: 4em;
-    margin-left: 7em;
+
+.container ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
     background-color: rgb(255, 188, 4);
-    cursor: pointer;   
-    border-radius: 25px;
-}
-.container button:hover{
-    height: 50px;
-    width: 150px;
-    margin: 4em;
-    margin-left: 7em;
-    background-color: greenyellow;
-    cursor: pointer;   
-    border-radius: 25px;
-}
-button a{
-    text-decoration: none;
     color: black;
-    background-color: white; 
+    text-align: center;
+    line-height: 40px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
 }
+
+.btn:hover {
+    background-color: greenyellow;
+}
+
 /* Footer styling */
 footer {
     color: white;
@@ -148,8 +169,22 @@ footer a:hover {
         margin: 10px 0;
     }
 
+    nav input[type="text"] {
+        width: 100%;
+    }
+
     main {
-        padding: 15px;
+        padding: 10px;
+    }
+
+    .holder {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 600px;
     }
 
     footer {
