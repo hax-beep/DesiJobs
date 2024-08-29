@@ -15,16 +15,11 @@ nav {
 }
 
 /* Logo or icon styling */
-.icon {
-    color: white;
-    font-size: 1.5em;
-    font-weight: bold;
-}
-img{
+.icon img {
     height: 50px;
     width: 50px;
-
 }
+
 /* Link styling within the navigation bar */
 nav a {
     text-decoration: none;
@@ -42,23 +37,38 @@ nav a:hover {
 /* Search form styling */
 .search-form {
     margin-left: auto;
-    margin-right: 20px;
     display: flex;
+    align-items: center;
 }
 
-nav input[type="text"] {
-    padding: 7px;
+.search-form input[type="text"] {
+    padding: 7px 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
     font-size: 1em;
 }
-.search{
-    border-radius: 100%;
-    height: 40px;
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 40px;
+    height: 40px;
+    border: none;
+    background-color: forestgreen;
+    color: white;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
-i{
-    margin-top: 8px;
+
+.search:hover {
+    background-color: darkgreen;
+}
+
+.search i {
+    margin: 0;
 }
 
 /* Log out button styling */
@@ -83,86 +93,73 @@ main {
     padding: 20px;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
 }
-.container{
-    height: 350px;
-    width: 1000px;
+
+.container {
     background-color: rgb(183, 172, 255);
     border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px;
 }
-.heads{
+
+.heads {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
-.title{
-    text-align: center;
-    margin: 3em;
+
+.title {
     background-color: slategray;
-    width: 300px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 2px;
-    font-size: large;
-    font-weight: 300;
-    color: rgb(0, 0, 0);
+    padding: 10px 20px;
     border-radius: 15px;
-    box-shadow: 5px 0 5px 0;
+    font-size: 1.5em;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.location{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 300px;
-    height: 50px;
-    margin-left: 50px;
+
+.location {
     background-color: cornflowerblue;
-    font-size: large;
-    font-weight: 300;
+    padding: 10px 20px;
     border-radius: 15px;
-    box-shadow: 5px 0 5px 0;
-}
-i{
-    margin-bottom: 5px;
-    margin-right: 7px;
-}
-.base{
+    font-size: 1.5em;
+    color: white;
     display: flex;
     align-items: center;
-    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.details{
-    height: 150px;
-    width: 400px;
-    align-items: center;
-    justify-content: center;
-    margin-right:6em ;
-    font-size: larger;
 
+.base {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
 }
-.apply{
-    width: 120px;
-    height: 60px;
-    margin: 2em;
-    margin-top: 3em;
-    margin-left: 4em;
+
+.details ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.apply {
     background-color: forestgreen;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
     cursor: pointer;
-    font-size: large;
-
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    align-self: flex-start;
 }
-.apply:hover{
-    width: 120px;
-    height: 60px;
-    margin: 2em;
-    margin-top: 3em;
-    margin-left: 4em;
-    background-color: rgb(255, 183, 0);
-    text-decoration: underline;
 
+.apply:hover {
+    background-color: darkorange;
+    transform: scale(1.05);
 }
+
 /* Footer styling */
 footer {
     color: white;
@@ -179,7 +176,6 @@ footer a {
     transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
-/* Hover effect for footer links */
 footer a:hover {
     text-decoration: underline;
 }
@@ -206,6 +202,10 @@ footer a:hover {
 
     main {
         padding: 15px;
+    }
+
+    .container {
+        padding: 10px;
     }
 
     footer {
