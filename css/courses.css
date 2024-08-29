@@ -68,7 +68,7 @@ main{
 .container{
     height: 300px;
     width: 400px;
-    background-color: slateblue;
+    background-color: #50aaff;
     margin: 4em;
     border-radius: 5px;
     border: 1px solid rgb(0, 241, 189);
@@ -78,11 +78,11 @@ main{
 .container h3{
     text-align: center;
     text-decoration: underline;
-    color: rgb(0, 255, 229);
+    color: #5f0d78;
 }
 .container p{
     margin: 5px;
-    color: rgb(255, 235, 156);
+    color: #312415;
 }
 .container button{
     height: 50px;
