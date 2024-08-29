@@ -1,44 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DesiJobs</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="css/login.css" />
-  </head>
-  <body>
+</head>
+<body>
     <header>
-      <nav>
-        <div class="icon"><a href="index.html"><img src="img/Screenshot 2024-08-29 001855.png" alt=""></a></div>
-        <a href="index.html">Home</a>
-      </nav>
+        <nav>
+            <div class="icon">
+                <a href="index.html">
+                    <img src="img/Screenshot 2024-08-29 001855.png" alt="Logo">
+                </a>
+            </div>
+            <a href="index.html">Home</a>
+        </nav>
     </header>
     <main>
         <div class="container">
             <form action="">
                 <h1>Login Here</h1>
-                <p>Email</p>
-                <input type="email" name="Email" size="30" placeholder="Email">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <br>
-                <p>Password</p>
-                <input type="password" name="password" size="30" placeholder="Password">
-                <i class="fa fa-lock" aria-hidden="true"></i>
-                </i>
-                <br>
-                <input class="button1" type="submit" value="Login" size="10">
-
+                <label for="email">Email</label>
+                <div class="input-container">
+                    <i class="fa fa-envelope"></i>
+                    <input type="email" id="email" name="email" placeholder="Email">
+                </div>
+                <label for="password">Password</label>
+                <div class="input-container">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" id="password" name="password" placeholder="Password">
+                </div>
+                <input class="button1" type="submit" value="Login"></br></br>
             </form>
-            <p>Didn't Have accout?<a href="register.html">Create one.</a></p>
+            <p>Don't have an account? <a href="register.html">Create one.</a></p>
         </div>
     </main>
-    <footer>Contact us-    <a href="#">abc@gmail.com</a></footer>
-  </body>
+    <footer>Contact us - <a href="mailto:abc@gmail.com">abc@gmail.com</a></footer>
+</body>
 </html>
