@@ -1,48 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DesiJobs</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="css/register.css" />
-  </head>
-  <body>
+</head>
+<body>
     <header>
-      <nav>
-        <div class="icon"><a href="index.html"><img src="img/Screenshot 2024-08-29 001855.png" alt=""></a></div>
-        <a href="index.html">Home</a>
+        <nav>
+            <div class="icon">
+                <a href="index.html">
+                    <img src="img/Screenshot 2024-08-29 001855.png" alt="Logo">
+                </a>
+            </div>
+            <a href="index.html">Home</a>
+        </nav>
     </header>
     <main>
         <div class="container">
             <form action="">
                 <h1>Register with us!!</h1>
-                <p>Email</p>
-                <input type="email" name="Email" size="30" placeholder="Email">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <br>
-                <p>Username</p>
-                <input type="text" name="username" size="30" placeholder="Username">
-                <i class="fa-solid fa-user"></i>
-                <br>
-                <p>Password</p>
-                <input type="password" name="password" size="30" placeholder="Password">
-                <i class="fa fa-lock" aria-hidden="true"></i>
-                </i>
-                <br>
-                <p>Confirm Password</p>
-                <input type="password" name="password" size="30" placeholder="Confirm Password">
-                <input class="button1" type="submit" value="Register" size="10">
-
+                <label for="email">Email</label>
+                <div class="input-container">
+                    <i class="fa fa-envelope"></i>
+                    <input type="email" id="email" name="email" placeholder="Email">
+                </div>
+                <label for="username">Username</label>
+                <div class="input-container">
+                    <i class="fa fa-user"></i>
+                    <input type="text" id="username" name="username" placeholder="Username">
+                </div>
+                <label for="password">Password</label>
+                <div class="input-container">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" id="password" name="password" placeholder="Password">
+                </div>
+                <label for="confirm_password">Confirm Password</label>
+                <div class="input-container">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password">
+                </div>
+                <input class="button1" type="submit" value="Register">
             </form>
         </div>
     </main>
-    <footer>Contact us-    <a href="#">abc@gmail.com</a></footer>
-  </body>
+    <footer>Contact us - <a href="mailto:abc@gmail.com">abc@gmail.com</a></footer>
+</body>
 </html>
