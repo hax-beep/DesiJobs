@@ -27,6 +27,11 @@ nav {
     font-weight: bold;
     margin: 50px;
 }
+.icon img{
+    height: 50px;
+    width: 50px;
+
+}
 
 /* Link styling within the navigation bar */
 nav a{
